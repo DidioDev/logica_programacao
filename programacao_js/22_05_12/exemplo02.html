@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+
+    let notas = [];
+
+    //Foi criado um índice(i). Significa que os números vão de 0 a 3(dentro do vetor).
+    for(let i = 0; i < 3; i++){
+        //Aqui vai ser pedido no PROMPT para informar 3 valores.
+        let pedirNotas = parseInt(prompt('Informe 3 notas para armazenar:'));
+        notas.push(pedirNotas);
+    }
+
+    for(let i = 0; i < notas.length; i++){
+        console.log(notas[i]);
+    }
+
+</script>

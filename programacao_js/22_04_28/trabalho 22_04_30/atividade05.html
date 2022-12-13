@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<script>
+
+    var salarioBruto = Number(window.prompt('Digite o seu Salário Bruto:'));
+    var salarioLiquido;
+    var inss;
+
+    if(salarioBruto <= 1212){
+        inss = salarioBruto * 0.075;
+        salarioLiquido = salarioBruto - inss;
+
+    } else if(salarioBruto >= 1212 && salarioBruto <= 2427.35){
+        inss = salarioBruto * 0.09;
+        salarioLiquido = salarioBruto - inss;
+
+    } else if(salarioBruto >= 2427.35 && salarioBruto <= 3641.03){
+        inss = salarioBruto * 0.12;
+        salarioLiquido = salarioBruto - inss;
+
+    } else {
+        inss = salarioBruto * 0.14;
+        salarioLiquido = salarioBruto - inss;
+    }
+
+    var ir;
+
+    if(salarioBruto <= 1903.98){
+
+    } else if(salarioBruto >= 1903.99 && salarioBruto <= 2826.65){
+        ir = salarioBruto * 0.075;
+        salarioLiquido = salarioLiquido - ir;
+
+    } else if(salarioBruto >= 2826.66 && salarioBruto <= 3751.05){
+        ir = salarioBruto * 0.15;
+        salarioLiquido = salarioLiquido - ir;
+
+    } else if(salarioBruto >= 3751.06 && salarioBruto <= 4664,68){
+        ir =  salarioBruto * 0.225;
+        salarioLiquido = salarioLiquido - ir;
+    
+    } else {
+        ir =  salarioBruto * 0.275;
+        salarioLiquido = salarioLiquido - ir;
+    }
+
+    window.alert('Seu salário é de: R$' + salarioLiquido);
+
+</script>

@@ -1,0 +1,109 @@
+<meta charset="UTF-8">
+<script>
+
+    valorInvestido = parseInt(prompt(`Digite aqui o valor investido (Somente o valor exato mais proximo, sem , ou .): `))
+
+    taxaJuros = parseInt(prompt(`Digite aqui a taxa de juros anual (somente numero sem o sinal de porcentagem %): `))
+
+    tempo = parseInt(prompt(`Insira a quantidade de dias corridos: `))
+    
+    function calculo (dias, juroAnual, valorInicial ) {
+
+        return ((dias / 300) * (juroAnual / 120)) * valorInicial
+
+    }
+
+    if (tempo = 1) {
+        tabelaRegresiva = 0.96
+    }
+    if (tempo = 2) {
+        tabelaRegresiva = 0.93
+    }
+    if (tempo = 3) {
+        tabelaRegresiva = 0.90
+    }
+    if (tempo = 4) {
+        tabelaRegresiva = 0.86
+    }
+    if (tempo = 5) {
+        tabelaRegresiva = 0.83
+    }
+    if (tempo = 6) {
+        tabelaRegresiva = 0.80
+    }
+    if (tempo = 7) {
+        tabelaRegresiva = 0.76
+    }
+    if (tempo = 8) {
+        tabelaRegresiva = 0.73
+    }
+    if (tempo = 9) {
+        tabelaRegresiva = 0.70
+    }
+    if (tempo = 10) {
+        tabelaRegresiva = 0.66
+    }
+    if (tempo = 11) {
+        tabelaRegresiva = 0.63
+    }
+    if (tempo = 12) {
+        tabelaRegresiva = 0.60
+    }
+    if (tempo = 13) {
+        tabelaRegresiva = 0.56
+    }
+    if (tempo = 14) {
+        tabelaRegresiva = 0.53
+    }
+    if (tempo = 15) {
+        tabelaRegresiva = 0.50
+    }
+    if (tempo = 16) {
+        tabelaRegresiva = 0.46
+    }
+    if (tempo = 17) {
+        tabelaRegresiva = 0.43
+    }
+    if (tempo = 18) {
+        tabelaRegresiva = 0.40
+    }
+    if (tempo = 19) {
+        tabelaRegresiva = 0.36
+    }
+    if (tempo = 20) {
+        tabelaRegresiva = 0.33
+    }
+    if (tempo = 21) {
+        tabelaRegresiva = 0.30
+    }
+    if (tempo = 22) {
+        tabelaRegresiva = 0.26
+    }
+    if (tempo = 23) {
+        tabelaRegresiva = 0.23
+    }
+    if (tempo = 24) {
+        tabelaRegresiva = 0.20
+    }
+    if (tempo = 25) {
+        tabelaRegresiva = 0.16
+    }
+    if (tempo = 26) {
+        tabelaRegresiva = 0.13
+    }
+    if (tempo = 27) {
+        tabelaRegresiva = 0.10
+    }
+    if (tempo = 28) {
+        tabelaRegresiva = 0.6
+    }
+    if (tempo = 29) {
+        tabelaRegresiva = 0.3
+    }
+    if (tempo >= 30) {
+        tabelaRegresiva = 0
+    }
+    
+    console.log(`Seu investimento retornou ${calculo(tempo, taxaJuros, valorInvestido) * tabelaRegresiva}`)
+
+</script>

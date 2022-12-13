@@ -1,0 +1,15 @@
+.title-page{
+    display: flex;
+    justify-content: center;
+    background-color: #c4c4c4;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 0;
+    width: 83%;
+    height: 1.50rem;
+    padding-top: 0px;
+    text-align: center;
+    background-color: #c4c4c4;
+}

@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(37, 34, 34);
+    padding-top: 30px;
+}
+
+.titulo_integrantes{
+    color: white;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.fotos_integrantes{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cabeçalho{
+    text-align: center;
+}
+
+.logo{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.logo:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.foto_lucas{
+    width: 180px;
+    height: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.foto_lucas:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(161, 78, 168, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(161, 78, 168, 0.5));
+
+}
+
+.nome_lucas{
+    color: white;
+}
+
+.foto_kaua{
+    width: 180px;
+    height: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.foto_kaua:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(161, 78, 168, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(161, 78, 168, 0.5));
+}
+
+.nome_kaua{
+    color: white;
+}
+
+.foto_arthur{
+    width: 180px;
+    height: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.foto_arthur:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(161, 78, 168, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(161, 78, 168, 0.5));
+}
+
+.nome_arthur{
+    color: white;
+}
+
+.foto_maranhao{
+    width: 180px;
+    height: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.foto_maranhao:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(161, 78, 168, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(161, 78, 168, 0.5));
+}
+
+.nome_maranhao{
+    color: white;
+}

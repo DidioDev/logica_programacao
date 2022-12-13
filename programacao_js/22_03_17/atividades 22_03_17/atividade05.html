@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+
+    window.alert('Seja bem vindo(a) a sua compra Online!\nwww.loja-fema.com');
+
+    var valorCompra = Number(parseFloat(window.prompt('Digite o preço do seu produto:')));
+    var formasPagamento = Number(parseFloat(window.prompt('Escolha a forma de pagamento:\n1) À Vista (5% de desconto).\n2) Cartão de Débito (5% de desconto).\n3) Cartão de Crédito.')));
+    var desconto = 5 / 100;
+    var semDesconto = 0;
+
+    if(formasPagamento == 1){
+        (valorDesconto = valorCompra * desconto);
+
+        window.alert('Na sua compra de R$' + valorCompra + ', você teve um desconto de: ' + valorDesconto + '%' + '\nValor final: R$' + (valorCompra - valorDesconto) + '\n \nForma de Pagamento: À Vista.');
+    }
+
+    if(formasPagamento == 2){
+        (valorDesconto = valorCompra * desconto);
+
+        window.alert('Na sua compra de R$' + valorCompra + ', você teve um desconto de: ' + valorDesconto + '\nValor final: R$' + (valorCompra - valorDesconto) + '\n \nForma de Pagamento: Cartão de Débito.');
+    }
+
+    if(formasPagamento == 3){
+        (valorCompra - semDesconto)
+
+        window.alert('Na sua compra de R$' + valorCompra + ', você teve um desconto de: ' + semDesconto + '\nValor final: R$' + (valorCompra - semDesconto) + '\n \nForma de Pagamento: Cartão de Crédito.');
+    }
+    else{
+        window.alert('Sua compra foi realizada com sucesso!')
+    }
+
+</script>

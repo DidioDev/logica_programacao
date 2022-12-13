@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+
+    window.alert('Seja bem-vindo(a) à calculadora de salário líquido!');
+    var salario = Number(window.prompt('Digite o valor do seu salário:'));
+    var salarioLiquido;
+
+    if(salario >= 1500 && salario <= 1999){
+        salarioLiquido = salario - ((10 / 100) * salario);
+        window.alert('O seu salário líquido é: R$' + salarioLiquido + '.');
+
+    }else if(salario >= 2000 && salario <= 2499){
+        salarioLiquido = salario - ((15 / 100) * salario);
+        window.alert('O seu salário líquido é: R$' + salarioLiquido + '.');
+    }else if(salario >= 2500){
+        salarioLiquido = salario - ((18 / 100) * salario);
+        window.alert('O seu salário líquido é: R$' + salarioLiquido + '.');
+    }else{
+        window.alert('O seu salário não tem nenhum desconto, você recebe R$' + salario + '.'); //Salário abaixo de R$1.500;
+    }
+
+</script>

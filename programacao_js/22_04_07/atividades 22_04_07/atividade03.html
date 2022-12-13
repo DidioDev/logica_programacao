@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+
+    //Função para calcular a porcentagem:
+    function valor(num, porcent) {
+        //Retorno (No caso, retorna o calculo para a função).
+        return num * porcent / 100
+    }
+
+    //Variável que recebe o valor:
+    let numero = parseInt(window.prompt('Digite um valor:'));
+
+    //Variável que recebe a porcentagem.
+    let porcentagem = parseInt(window.prompt('Qual a porcentagem deste valor deseja saber? (Insira apenas números)'));
+
+    //Impressão do resultado:
+    console.log(`${valor(numero, porcentagem)}`)
+
+</script>

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+
+    let nomeDoFuncionario = prompt('Qual é o nome do funcionário?');
+    let salarioDoFuncionario = parseFloat(prompt('Qual é o salário do funcionário?'));
+    let anosDeTrabalho = parseFloat(prompt('Quantos anos de empresa tem o funcionário?'));
+
+    console.log('INFORMAÇÕES PESSOAIS:')
+    console.log('Nome do funcionário: ' + nomeDoFuncionario);
+    console.log('Salário do funcionário: ' + salarioDoFuncionario);
+    console.log('Anos de trabalho: ' + anosDeTrabalho);
+    console.log('\nINFORMAÇÕES DE SALÁRIO:')
+
+    if (anosDeTrabalho <= 3) {
+        let salarioAdicional = salarioDoFuncionario * 1.03;
+        console.log('Novo Salário: ' + salarioAdicional);
+
+    } else if (anosDeTrabalho > 3 && anosDeTrabalho <= 10) {
+        let salarioAdicional = salarioDoFuncionario * 1.125;
+        console.log('Novo Salário: ' + salarioAdicional);
+
+    } else if (anosDeTrabalho > 10) {
+        let salarioAdicional = salarioDoFuncionario * 1.2;
+        console.log('Novo Salário: ' + salarioAdicional);
+    }
+
+</script>

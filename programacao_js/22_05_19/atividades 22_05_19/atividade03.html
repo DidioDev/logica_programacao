@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+
+    let valorDaCasa = parseInt(window.prompt('Qual é o valor da casa?'));
+    let salarioComprador = parseInt(window.prompt('Qual o salário mensal do comprador?'));
+    let anosPagando = parseInt(window.prompt('Quantos anos o comprador vai pagar?'));
+
+    let mesesPagando = anosPagando * 12;
+    let prestacaoMensal = valorDaCasa / mesesPagando;
+    let pagamentoAprovado = salarioComprador * 0.30
+
+    if(prestacaoMensal <= pagamentoAprovado){
+        console.log('Seu empréstimo foi aprovado!\nA prestação será de: R$ ' + prestacaoMensal);
+    } else if (prestacaoMensal > pagamentoAprovado){
+        console.log('Seu empréstimo foi negado!\nA prestação será de: R$ ' + prestacaoMensal);
+    }
+    
+</script>

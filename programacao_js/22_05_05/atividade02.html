@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+
+    let matriz = '';
+    let brancoImpar = true;
+    for(let i = 0; i < 10; i++){
+        matriz = matriz + '|';
+        for(let j = 0; j < 10; j++){
+            if(brancoImpar){
+                if(j % 2 == 0){
+                    matriz = matriz + ` X |`;
+                } else {
+                    matriz = matriz + `   |`;
+                }
+            } else {
+                if(j % 2 == 0) {
+                    matriz = matriz + `   |`;
+                } else {
+                    matriz = matriz + ` X |`;
+                }
+            }
+        }
+        brancoImpar = !brancoImpar;
+        matriz = matriz + '\n';
+    }
+
+    console.log(matriz);
+
+</script>

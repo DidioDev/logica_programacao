@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+
+    let valorDaPizza = 21;
+    let pedacoDePizza = 3;
+    let fatiasDePizza = 10;
+    let totalDePessoas = parseInt(window.prompt('Quantas pessoas vão comer pizza?'));
+
+    let totalDePedacos = (totalDePessoas * pedacoDePizza);
+    let totalDePizza = Math.ceil(totalDePedacos / fatiasDePizza);
+    let custoDasPizza = (totalDePizza * valorDaPizza);
+
+    console.log('O total das pizza vai ser, R$' + custoDasPizza);
+
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <title>Vídeos de Estudo</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body onload="inicializar()">
+
+    <div class="cabeçalho">
+        <img src="../atividade03/imagens/logo.png" class="logo" width="100px" height="100px">
+        <h1 class="titulo_videos">LISTA DE VÍDEOS:</h1>
+    </div>
+
+    <nav>
+        <div id="inputItem">
+        <input type="hidden" id="idItem">
+            <button onclick="AddItem()" class="material-icons">add</button>
+            <input type="text" id="AddInput" placeholder="Descrição do Vídeo"> <br/>
+            <hr size ="2">
+            
+            <button class="material-icons" id="Paste">content_paste</button>
+            <input type="text" id="LinkVideo" placeholder="Link do Vídeo"> 
+            
+            <hr size="2">
+        </div>
+        
+    </nav>
+    <div id="listaDeItens"></div>
+    <script src="script.js"></script>
+</body>
+</html>

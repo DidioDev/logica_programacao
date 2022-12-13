@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+
+    let notasArmazenadas = [];
+    let maiorValor = 0;
+
+    for(let i = 0; i < 5; i++){
+        let pedirNotas = parseInt(window.prompt('Informe 5 valores para ser armazenados.\nArmazenados: ' + i));
+        notasArmazenadas.push(pedirNotas);
+    }
+
+    for(let i = 0; i < notasArmazenadas.length; i++){
+        console.log(notasArmazenadas[i]);
+    }
+
+    let mediaFinal = ((notasArmazenadas[0] + notasArmazenadas[1] + notasArmazenadas[2] + notasArmazenadas[3] + notasArmazenadas[4]) / 5);
+    console.log(`Média final da nota: ${mediaFinal}`);
+
+    for(let i = 0; i < 5; i++){
+        if(maiorValor < notasArmazenadas[i]){
+            maiorValor = notasArmazenadas[i]
+        }
+    }
+
+    console.log(`Maior valor: ${maiorValor}`);
+
+</script>

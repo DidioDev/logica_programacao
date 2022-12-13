@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(37, 34, 34);
+    padding-top: 30px;
+}
+
+.cabeçalho{
+    text-align: center;
+}
+
+.logo{
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.logo:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.titulo_lista{
+    color: white;
+    padding-top: 15px;
+}
+
+.material-icons.md-light { color: rgb(255, 255, 255); }
+.Item {
+    border-radius: 8px;
+    display: flexbox;
+    margin: 15px;
+}
+
+input {
+    border: 0px;
+    height: 24px;
+    width: 400px;
+    background-color: transparent;
+    color: white;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+button {
+    border: 0px;
+    background-color: transparent;
+    border-radius: 3px;
+    margin-left: 10px;
+    color: blueviolet;
+}

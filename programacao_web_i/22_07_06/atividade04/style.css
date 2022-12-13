@@ -1,0 +1,96 @@
+#listaProdutos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+body{
+    background-color: rgb(37, 34, 34);
+    padding-top: 30px;
+}
+
+.cabeçalho{
+    text-align: center;
+}
+
+.logo{
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.logo:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.titulo_mercado{
+    color: white;
+    padding-top: 15px;
+}
+
+.botões_produto{
+    color: white;
+    padding-left: 25px;
+    size: 65px;
+}
+
+.nome_produto{
+    padding-left: 8px;
+}
+
+.preço_produto{
+    padding-left: 8px;
+}
+
+.imagem_produto{
+    padding-left: 8px;
+    
+}
+
+.enviar_produto{
+    padding-left: 8px;
+}
+
+.imagem_produto2{
+    width: 250px;
+    border: blueviolet;
+    border-radius: 6px;
+    padding: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.nome_produto2{
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.preço_produto2{
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.botões_utilidades{
+    display: flex;
+    align-items: center;
+justify-content: center;    
+}

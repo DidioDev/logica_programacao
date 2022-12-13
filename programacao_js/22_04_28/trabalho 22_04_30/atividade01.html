@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+
+    //Criei duas variáveis: A e B, com valores quaisquer;
+    let A = 100;
+    let B = 200;
+    //Criei uma variável para guardar o valor do A, para não perder quando substituir A = B;
+    let valorGuardado = A;
+
+    //Fiz a substituição de valores, valorGuardado = A;
+    valorGuardado = A;
+    A = B;
+    //Como meu A já foi substituido por B, vou usar o valorGuardado para substituir o B;
+    B = valorGuardado;
+
+    //Fazendo o resultado no console.log:
+    console.log('ANTES:\nValor A: 100\nValor B: 200\n\nDEPOIS:\nValor A: ' + A + '\nValor B: ' + B);
+
+</script>

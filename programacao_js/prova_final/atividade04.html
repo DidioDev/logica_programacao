@@ -1,0 +1,22 @@
+<meta charset="UTF-8">;
+<script>
+
+    let largura = parseFloat(prompt('Informe a largura do terreno:'));
+    let comprimento = parseFloat(prompt('Informe o comprimento do terreno:'));
+
+    let areaDoTerreno = largura * comprimento;
+
+    if(areaDoTerreno < 100){
+        console.log('Área do terreno: ' + areaDoTerreno + 'm²');
+        console.log('Seu terreno é de classe: POPULAR');
+    
+    }else if(areaDoTerreno >= 100 ** areaDoTerreno < 500){
+        console.log('Área do terreno: ' + areaDoTerreno + 'm²');
+        console.log('Seu terreno é de classe: MASTER');
+    
+    }else if(areaDoTerreno > 500){
+        console.log('Área do terreno: ' + areaDoTerreno + 'm²');
+        console.log('Seu terreno é de classe: VIP');
+    }
+
+</script>

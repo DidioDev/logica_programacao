@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+
+    let nomesArmazenados = [];
+
+    for(let i = 0; i < 7; i++){
+        let pedirNomes = window.prompt('Informe 7 nomes para ser armazenados.\nArmazenados: ' + i);
+        nomesArmazenados.push(pedirNomes);
+    }
+
+    for(let i = nomesArmazenados.length; 0 <= i; i--){
+        console.log(nomesArmazenados[i])
+    }
+
+</script>

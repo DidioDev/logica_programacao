@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+
+    let segredo = 15;
+    let numeroDigitado = 0;
+    let erro = 0;
+
+    while (segredo != numeroDigitado){
+        numeroDigitado = parseInt(prompt('Descubra o número certo:'));
+
+        if (segredo == numeroDigitado){
+            alert('Você acertou!');
+        } else {
+            alert('Você errou!');
+            erro++
+        }
+        if (erro == 3){
+            numeroDigitado = 15;
+            alert('Você perdeu!');
+        }
+    }
+    
+</script>

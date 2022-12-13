@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+
+    //Pedi para informar o valor da Compra no window.prompt;
+    let valorDaCompra = parseInt(window.prompt('Digite o valor da compra:'));
+
+    //Se o preço de aquisição for menor que 50, terá um lucro de 35%.
+    if(valorDaCompra > 50) {
+        valorDaCompra = valorDaCompra + ((valorDaCompra * 30) / 100)
+    } else {
+        //Se  o preço de aquisição for maior que 50, terá um lucro de 45%.
+        (valorDaCompra <= 50)
+        valorDaCompra = valorDaCompra + ((valorDaCompra * 45) / 100)
+    }
+
+    window.alert('Seu valor é: ' + valorDaCompra);
+
+</script>

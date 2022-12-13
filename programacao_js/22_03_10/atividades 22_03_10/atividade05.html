@@ -1,0 +1,34 @@
+<script>
+
+    let capitalInvestido = 20000
+    let saldoNoInicio = -1
+
+    let saldoInicial = capitalInvestido * saldoNoInicio;
+
+    console.log('Capital Investido: ' + capitalInvestido);
+    console.log('Saldo Inicial: ' + saldoInicial);
+
+    let lucroJaneiro = 3000
+    let saldoJaneiro = saldoInicial + lucroJaneiro;
+
+    console.log('Balanço Janeiro: ' + saldoJaneiro);
+
+    let lucroFevereiro = 9000
+    let saldoFevereiro = saldoJaneiro + lucroFevereiro;
+
+    console.log('Balanço Fevereiro: ' + saldoFevereiro);
+
+    let lucroMarco = 12000
+    let saldoMarco = saldoFevereiro + lucroMarco;
+
+    console.log('Balanço Março: ' + saldoMarco);
+
+    let lucroAbril = 20000
+    let saldoAbril = saldoMarco + lucroAbril;
+
+    console.log('Balanço Abril: ' + saldoAbril)
+    
+    let capitalFinalDoInvestimento = saldoInicial + lucroJaneiro + lucroFevereiro + lucroMarco + lucroAbril;
+
+    console.log('Capital Final do Investimento ' + capitalFinalDoInvestimento)
+</script>

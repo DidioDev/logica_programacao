@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+
+    <style>
+
+        body {
+            background-color: #ccc;
+            
+        }
+
+        #resultado {
+            border: 1.5px solid rgb(0, 134, 0);
+            border-radius: 3px;
+            height: 20px;
+            width: 200px;
+            background-color: #fff;
+        }
+
+        button:hover {
+            border: 1.5px solid rgb(0, 134, 0);
+            background-color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <label>Informe seu nome:</label> <br/>
+    <input id="nome" type="text"> <br/>
+
+    <label>Primeira nota:</label> <br/>
+    <input id="nota1" type="number"> <br/>
+
+    <label>Segunda nota:</label> <br/>
+    <input id="nota2" type="number"> <br/><br/>
+    <button onclick="calcularNotas()">Calcular</button> <br/><br/>
+    <div id="resultado"></div> <br/><br/>
+
+    <script>
+
+        function calcularNotas() {
+            let nota1 = parseInt(document.querySelector('#nota1').value);
+            let nota2 = parseInt(document.querySelector('#nota2').value);
+            let nome = document.querySelector('#nome').value;
+            let calcularMedia = (nota1 + nota2) / 2;
+            
+            document.querySelector('#resultado').innerHTML = nome + ', sua média é: ' + calcularMedia;
+        }
+
+    </script>
+</body>
+</html>
